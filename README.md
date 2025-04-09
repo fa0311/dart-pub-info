@@ -1,63 +1,61 @@
 # Dart Pub Info
 
-Dart Pub Info は、Dart プロジェクトの`pubspec.yaml`ファイル内のパッケージ名にホバーすると、そのパッケージの情報を表示する VSCode 拡張機能です。
+**Dart Pub Info** is a Visual Studio Code extension that displays package information when hovering over package names in the `pubspec.yaml` file of a Dart project.
 
-## 機能
+## Features
 
-この拡張機能は以下の機能を提供します：
+This extension provides the following features:
 
-- `pubspec.yaml`ファイル内のパッケージ名を検出
-- パッケージ名にホバーすると、pub.dev API からパッケージ情報を取得
-- パッケージの最新バージョン、説明、ホームページ、リポジトリ、pub.dev へのリンクを表示
+- Detects package names inside the `pubspec.yaml` file
+- Fetches package information from the [pub.dev API](https://pub.dev) when hovering over a package name
+- Displays the latest version, description, homepage, repository, and a link to pub.dev
 
-### 使用例
+### Example Usage
 
-1. Dart プロジェクトの`pubspec.yaml`ファイルを開きます
-2. `dependencies`または`dev_dependencies`セクション内のパッケージ名にマウスカーソルを合わせます
-3. ホバー表示でパッケージの詳細情報が表示されます
+1. Open the `pubspec.yaml` file of a Dart project
+2. Hover over a package name under the `dependencies` or `dev_dependencies` section
+3. A tooltip will appear showing detailed information about the package
 
-## 要件
+## Requirements
 
-この拡張機能を使用するには以下が必要です：
+To use this extension, you will need:
 
-- Visual Studio Code 1.98.0 以上
-- インターネット接続（パッケージ情報の取得に必要）
+- Visual Studio Code version 1.98.0 or higher
+- An internet connection (required to fetch package data)
 
-## 拡張機能の設定
+## Extension Settings
 
-現在、この拡張機能には特別な設定はありません。
+There are currently no configurable settings for this extension.
 
-## 既知の問題
+## Known Issues
 
-- パッケージ情報の取得に失敗した場合、エラーメッセージが表示されます
-- 一部のパッケージでは、pub.dev API から完全な情報が取得できない場合があります
+- If package information fails to load, an error message will be displayed
+- Some packages may have incomplete information available from the pub.dev API
 
-## リリースノート
+## Release Notes
 
 ### 0.0.1
 
-- 初期リリース
-- `pubspec.yaml`ファイル内のパッケージ名にホバーすると情報を表示する機能
+- Initial release
+- Display package info on hover within the `pubspec.yaml` file
 
 ---
 
-## Following extension guidelines
+## Following Extension Guidelines
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-- [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+Make sure you've read through the [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines) and are following best practices for extension development.
 
 ## Working with Markdown
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+You can edit this `README.md` using Visual Studio Code. Here are some helpful tips:
 
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows/Linux)
+- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows/Linux)
+- Press `Ctrl+Space` to trigger Markdown snippet suggestions
 
-## For more information
+## For More Information
 
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+- [Visual Studio Code's Markdown Support](https://code.visualstudio.com/docs/languages/markdown)
 - [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-**Enjoy!**
+**Enjoy!** 🚀

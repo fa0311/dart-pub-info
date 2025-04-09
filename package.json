@@ -1,8 +1,8 @@
 {
   "name": "dart-pub-info",
   "displayName": "Dart Pub Info",
-  "description": "Dartプロジェクトのpubspec.yamlファイル内のパッケージにホバーすると情報を表示する拡張機能",
-  "version": "0.0.1",
+  "description": "An extension that displays information when hovering over packages in the pubspec.yaml file of a Dart project.",
+  "version": "0.0.2",
   "publisher": "fa0311",
   "license": "MIT",
   "repository": {
@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/fa0311/dart-pub-info#readme",
   "engines": {
-    "vscode": "^1.98.0"
+    "vscode": "^1.75.0"
   },
   "categories": [
     "Other",
@@ -46,15 +46,15 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "pnpm run package",
-    "compile": "pnpm run check-types && pnpm run lint && node esbuild.js",
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
     "watch": "npm-run-all -p watch:*",
     "watch:esbuild": "node esbuild.js --watch",
     "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
-    "package": "pnpm run check-types && pnpm run lint && node esbuild.js --production",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
     "compile-tests": "tsc -p . --outDir out",
     "watch-tests": "tsc -p . -w --outDir out",
-    "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "check-types": "tsc --noEmit",
     "lint": "eslint src",
     "test": "vscode-test"
@@ -62,7 +62,7 @@
   "devDependencies": {
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
-    "@types/vscode": "^1.98.0",
+    "@types/vscode": "^1.75.0",
     "@typescript-eslint/eslint-plugin": "^8.28.0",
     "@typescript-eslint/parser": "^8.28.0",
     "@vscode/test-cli": "^0.0.10",
