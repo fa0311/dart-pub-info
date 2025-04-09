@@ -14,34 +14,19 @@
   },
   "homepage": "https://github.com/fa0311/dart-pub-info#readme",
   "engines": {
-    "vscode": "^1.75.0"
+    "vscode": "^1.75.0",
+    "npm": "^8.0.0"
   },
-  "categories": [
-    "Other",
-    "Programming Languages"
-  ],
-  "keywords": [
-    "dart",
-    "flutter",
-    "pubspec",
-    "package",
-    "hover"
-  ],
-  "activationEvents": [
-    "onLanguage:yaml"
-  ],
+  "categories": ["Other", "Programming Languages"],
+  "keywords": ["dart", "flutter", "pubspec", "package", "hover"],
+  "activationEvents": ["onLanguage:yaml"],
   "main": "./dist/extension.js",
   "contributes": {
     "languages": [
       {
         "id": "yaml",
-        "extensions": [
-          ".yaml",
-          ".yml"
-        ],
-        "filenames": [
-          "pubspec.yaml"
-        ]
+        "extensions": [".yaml", ".yml"],
+        "filenames": ["pubspec.yaml"]
       }
     ]
   },
@@ -57,7 +42,8 @@
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "check-types": "tsc --noEmit",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "preinstall": "npx -y only-allow npm"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",

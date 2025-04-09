@@ -18,5 +18,5 @@ export interface PackageInfo {
  */
 export interface PackageAtPosition {
   packageName: string;
-  range: import('vscode').Range;
+  range: import("vscode").Range;
 }
