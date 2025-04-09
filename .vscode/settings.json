@@ -13,5 +13,6 @@
 
   "[json][jsonc][typescript][javascript]": {
     "editor.defaultFormatter": "biomejs.biome"
-  }
+  },
+  "npm.packageManager": "npm"
 }
