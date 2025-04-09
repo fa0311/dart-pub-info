@@ -2,6 +2,8 @@
 
 **Dart Pub Info** is a Visual Studio Code extension that displays package information when hovering over package names in the `pubspec.yaml` file of a Dart project.
 
+![Dart Pub Info](docs/GoGhVryaoAAACWB.png)
+
 ## Features
 
 This extension provides the following features:
